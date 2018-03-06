@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.demo_seekbar.pulkit.MainActivity">
+
+    <Button
+        android:id="@+id/btn_simple_seekbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:text="Simple SeekBar"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_simple_range_seekbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_simple_seekbar"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:text="Simple Range SeekBar"
+        android:textAllCaps="false" />
+
+
+    <Button
+        android:id="@+id/btn_pin_seekbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_simple_range_seekbar"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:text="Pin Range SeekBar"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_animated_pin_seekbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_pin_seekbar"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:text="Animated Pin SeekBar"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_custom_seekbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_animated_pin_seekbar"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:text="Custom SeekBar"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_bubble_range_seekbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_custom_seekbar"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:text="Custom Bubble Range SeekBar"
+        android:textAllCaps="false" />
+
+
+</RelativeLayout>

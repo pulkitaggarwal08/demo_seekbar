@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.demo_seekbar.pulkit.activities.BubbleRangeSeekbarActivity">
+
+    <com.demo_seekbar.pulkit.range_seekbar.RangeSeekBar
+        android:id="@+id/bubble_simple_seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:rsb_lineColorEdge="@color/green"
+        app:rsb_lineColorSelected="@color/colorAccent"
+        app:rsb_markTextArray="@array/markArray"
+        app:rsb_seekBarMode="single"
+        app:rsb_thumbResId="@mipmap/seekbar_thumb" />
+
+    <TextView
+        android:id="@+id/tv_progress"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/bubble_simple_seekbar"
+        android:gravity="center" />
+
+    <com.demo_seekbar.pulkit.range_seekbar.RangeSeekBar
+        android:id="@+id/bubble_range_seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_below="@+id/tv_progress"
+        app:rsb_lineColorEdge="@color/green"
+        app:rsb_lineColorSelected="@color/colorAccent"
+        app:rsb_markTextArray="@array/markArray2"
+        app:rsb_max="1"
+        app:rsb_min="-1"
+        app:rsb_seekBarHeight="4dp"
+        app:rsb_seekBarMode="range"
+        app:rsb_textPadding="15dp"
+        app:rsb_thumbPrimaryColor="@color/colorPrimary"
+        app:rsb_thumbSecondaryColor="@color/green"
+        app:rsb_thumbSize="20dp" />
+
+    <com.demo_seekbar.pulkit.range_seekbar.RangeSeekBar
+        android:id="@+id/seekbar3"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_below="@+id/bubble_range_seekbar"
+        app:rsb_cellMode="other"
+        app:rsb_hintBGHeight="50dp"
+        app:rsb_hintBGWith="60dp"
+        app:rsb_lineColorEdge="#c3c3c3"
+        app:rsb_lineColorSelected="#a6c1ee"
+        app:rsb_markTextArray="@array/markArray"
+        app:rsb_max="100"
+        app:rsb_min="-100"
+        app:rsb_reserve="60"
+        app:rsb_seekBarHeight="2dp"
+        app:rsb_seekBarMode="range"
+        app:rsb_textPadding="17dp"
+        app:rsb_textSize="16sp"
+        app:rsb_thumbResId="@drawable/custom_thumb"
+        app:rsb_thumbSize="20dp" />
+
+</RelativeLayout>
